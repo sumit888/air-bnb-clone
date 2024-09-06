@@ -1,4 +1,4 @@
-import banner from "../assets/banner-grid.png"
+import banner from "../assets/images/banner-grid.png"
 
 function Hero(){
     return(
