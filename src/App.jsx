@@ -1,10 +1,10 @@
 import Header from "./components/Header"
 import Hero from "./components/Hero"
 import Card from "./components/Card.Jsx"
-import cardImage from "./assets/images/katie-zaferes.png"
-import weddingImage from "./assets/images/wedding-photography.png"
-import mountainBike from "./assets/images/mountain-bike.png"
-import data from "./components/data.js"
+// import cardImage from "./assets/images/katie-zaferes.png"
+// import weddingImage from "./assets/images/wedding-photography.png"
+// import mountainBike from "./assets/images/mountain-bike.png"
+import data from "./components/data.jsx"
 
 
 
