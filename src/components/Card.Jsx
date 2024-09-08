@@ -2,17 +2,17 @@
 import starIcon from "../assets/images/star.png"
 
 function Card(props) {
-    return (
+        return (
         <div className="card">
-            <img src={`./assets/images/${props.img}`}  alt="profile" className="card--image" />
+            <img src={`../images/${props.img}`} className="card--image" />
             <div className="card--stats">
-                <img src={starIcon} alt="star" className="card--star" />
+                <img src={starIcon} className="card--star" />
                 <span>{props.rating}</span>
                 <span className="gray">({props.reviewCount}) • </span>
-                <span className="gray"> {props.location}</span>
+                <span className="gray">{props.location}</span>
             </div>
-            <p>{props.title}</p>
-            <p><span className="bold">From ${props.price}</span> / person</p>
+            <p className="card--title">{props.title}</p>
+            <p className="card--price"><span className="bold">From ${props.price}</span> / person</p>
         </div>
     )
 }

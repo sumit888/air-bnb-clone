@@ -9,25 +9,30 @@ import data from "./components/data.js"
 
 
 function App(){
-  // const dataSet = data.map(function(joke){
-  //   return <Card 
-  //     img={props.img}
-  //     rating={props.rating}
-  //     reviewCount={props.reviewCount}
-  //     location={props.location}
-  //     title={props.title}
-  //     price={props.price}
-  //   />
-  // })
+  
+    const cards = data.map(item => {
+        return (
+            <Card 
+                key={item.id}
+                img={item.coverImg}
+                rating={item.stats.rating}
+                reviewCount={item.stats.reviewCount}
+                location={item.location}
+                title={item.title}
+                price={item.price}
+            />
+        )
+    })  
+
   return(
     <>
       <Header />
       <Hero />
-      
-
+      {cards}
+{/* 
       <Card img="katie-zaferes.png" rating={5.0} reviewCount={6} location="Nepal" title="Life Lessons with Katie Zaferes" price={136} />
-      <Card img={weddingImage} rating={4.0} reviewCount={5} location="India" title="Blissful wedding in the Himalayas" price={236} />
-      <Card img={mountainBike} rating={4.5} reviewCount={4} location="Switzerland" title="Explore the rocky mountains" price={186} /> */
+      <Card img="wedding-photography.png" rating={4.0} reviewCount={5} location="India" title="Blissful wedding in the Himalayas" price={236} />
+      <Card img="mountain-bike.png" rating={4.5} reviewCount={4} location="Switzerland" title="Explore the rocky mountains" price={186} />  */}
     </>
   )
 }
