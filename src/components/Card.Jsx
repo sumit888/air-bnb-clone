@@ -5,7 +5,7 @@ import starIcon from "../assets/images/star.png"
 function Card(props) {
     let badgeText;
     if (props.item.openSpots === 0) {
-        badgeText = "SOLD OUT";
+        badgeText = "SOLD OUT 😔";
     } else if (props.item.location === "Online") {
         badgeText = "ONLINE";
     }
