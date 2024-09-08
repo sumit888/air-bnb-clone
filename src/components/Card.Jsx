@@ -4,7 +4,7 @@ import starIcon from "../assets/images/star.png"
 function Card(props) {
     return (
         <div className="card">
-            <img src={props.img} alt="profile" className="card--image" />
+            <img src={`./assets/images/${props.img}`}  alt="profile" className="card--image" />
             <div className="card--stats">
                 <img src={starIcon} alt="star" className="card--star" />
                 <span>{props.rating}</span>
