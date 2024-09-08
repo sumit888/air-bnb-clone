@@ -8,18 +8,21 @@ import data from "./components/data.js"
 
 
 
+
 function App(){
   
     const cards = data.map(item => {
         return (
             <Card 
                 key={item.id}
-                img={item.coverImg}
-                rating={item.stats.rating}
-                reviewCount={item.stats.reviewCount}
-                location={item.location}
-                title={item.title}
-                price={item.price}
+                item={item}
+                // img={item.coverImg}
+                // rating={item.stats.rating}
+                // reviewCount={item.stats.reviewCount}
+                // location={item.location}
+                // title={item.title}
+                // price={item.price}
+                // openSpots={item.openSpots}
             />
         )
     })  
@@ -28,7 +31,9 @@ function App(){
     <>
       <Header />
       <Hero />
-      {cards}
+      <section className="cards-list">
+                {cards}
+            </section>
 {/* 
       <Card img="katie-zaferes.png" rating={5.0} reviewCount={6} location="Nepal" title="Life Lessons with Katie Zaferes" price={136} />
       <Card img="wedding-photography.png" rating={4.0} reviewCount={5} location="India" title="Blissful wedding in the Himalayas" price={236} />
